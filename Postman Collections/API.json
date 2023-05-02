@@ -198,7 +198,8 @@
 							"variable": [
 								{
 									"key": "layout_id",
-									"value": "9a03ad26-4f8e-41f7-a1ab-8977d93b1ca1"
+									"value": "insert_layout_ID",
+									"description": "`id` field from `/views` api call"
 								}
 							]
 						}
