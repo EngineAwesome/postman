@@ -38,7 +38,8 @@
 					"response": []
 				}
 			],
-			"id": "e69f2d3c-a039-411c-bd4e-f0c26863229e"
+			"id": "e69f2d3c-a039-411c-bd4e-f0c26863229e",
+			"description": "Object Types allow you to store similar information together—like contacts, quotes, or projects. Adding at least one Object Type is the first step to using Engine Awesome."
 		},
 		{
 			"name": "Objects",
