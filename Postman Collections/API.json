@@ -151,7 +151,8 @@
 					"response": []
 				}
 			],
-			"id": "1d5c51a1-caf4-48ba-b949-8dd366aa9911"
+			"id": "1d5c51a1-caf4-48ba-b949-8dd366aa9911",
+			"description": "Objects are data stored within Object Types. For example, if you have an Object Type called \"Contacts\", one of your Objects may be \"Michael Scott\"."
 		},
 		{
 			"name": "Layouts",
