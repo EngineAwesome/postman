@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "b479cd99-d50e-4515-81ab-e09ae62ca5de",
+		"name": "Engine Awesome",
+		"description": "A collection of API calls for Engine Awesome.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Object Types",
+			"item": [
+				{
+					"name": "GET all object types",
+					"id": "683086dc-ae00-4ba3-acbf-94e9aa74421a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{api_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://int.engineawesome.app/api/v1/object-types"
+					},
+					"response": []
+				}
+			],
+			"id": "e69f2d3c-a039-411c-bd4e-f0c26863229e",
+			"description": "Object Types allow you to store similar information together—like contacts, quotes, or projects. Adding at least one Object Type is the first step to using Engine Awesome."
+		},
+		{
+			"name": "Objects",
+			"item": [
+				{
+					"name": "GET all objects",
+					"id": "536bacaa-495a-4e7f-beae-81a36475a8a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{api_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://int.engineawesome.app/api/v1/objects/:object_id",
+							"protocol": "https",
+							"host": [
+								"int",
+								"engineawesome",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"objects",
+								":object_id"
+							],
+							"variable": [
+								{
+									"key": "object_id",
+									"value": "fa68956a-33bf-4503-a337-2f40c3d96a62",
+									"description": "`id` field from `/object-types` api call"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all objects by search field",
+					"id": "a6f7267a-0119-4701-a472-619c398a14c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{api_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://int.engineawesome.app/api/v1/objects/:object_id?first_name=<text>",
+							"protocol": "https",
+							"host": [
+								"int",
+								"engineawesome",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"objects",
+								":object_id"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "<text>",
+									"description": "The value.you want to search for "
+								}
+							],
+							"variable": [
+								{
+									"id": "a3bea7b6-f278-4b03-9b23-bf91d7da7eaa",
+									"key": "object_id",
+									"value": "fa68956a-33bf-4503-a337-2f40c3d96a62",
+									"description": "`id` field from `/object-types` api call"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "1d5c51a1-caf4-48ba-b949-8dd366aa9911",
+			"description": "Objects are data stored within Object Types. For example, if you have an Object Type called \"Contacts\", one of your Objects may be \"Michael Scott\"."
+		},
+		{
+			"name": "Layouts",
+			"item": [
+				{
+					"name": "GET layout",
+					"id": "a2200e77-7183-4621-9103-40f963537129",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{api_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://int.engineawesome.app/api/v1/views/:layout_id",
+							"protocol": "https",
+							"host": [
+								"int",
+								"engineawesome",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"views",
+								":layout_id"
+							],
+							"variable": [
+								{
+									"key": "layout_id",
+									"value": "9a03ad26-4f8e-41f7-a1ab-8977d93b1ca1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET all layouts",
+					"id": "292f814e-667e-4a79-9906-cb37d4495b25",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{api_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://int.engineawesome.app/api/v1/views/"
+					},
+					"response": []
+				}
+			],
+			"id": "50a076a1-30b6-4d08-81c6-bc5d956ebeaf",
+			"description": "Layouts let you create forms, tables, dashboards, etc so you can enter and view your Object data."
+		}
+	]
+}
