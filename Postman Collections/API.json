@@ -255,7 +255,8 @@
 					"response": []
 				}
 			],
-			"id": "50a076a1-30b6-4d08-81c6-bc5d956ebeaf"
+			"id": "50a076a1-30b6-4d08-81c6-bc5d956ebeaf",
+			"description": "Layouts let you create forms, tables, dashboards, etc so you can enter and view your Object data."
 		}
 	]
 }
