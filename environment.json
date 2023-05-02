@@ -1,0 +1,21 @@
+{
+	"id": "4209f134-9103-43ef-956c-ebd2b08ad96a",
+	"name": "Engine Awesome",
+	"values": [
+		{
+			"key": "team_slug",
+			"value": "your_team_slug",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "api_token",
+			"value": "your_api_token",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-05-02T02:13:07.435Z",
+	"_postman_exported_using": "Postman/10.13.5"
+}
